@@ -12,6 +12,10 @@ body {
   background-color: #2b3036;
 }
 
+/* ********
+  HEADER    
+******** */
+
 header {
   background-color: var(--dark-black);
   position: sticky;
@@ -37,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1600px;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -90,4 +94,95 @@ header {
   .nav-menu {
     display: none;
   }
+}
+
+/* ********
+  MAIN     
+******** */
+
+.main-container {
+  /* display: grid; */
+  /* gap: 3rem; */
+  /* margin-top: 13rem; */
+  height: 100vh;
+  max-width: 100rem;
+  margin: 0 auto;
+  /* border: red solid 1px; */
+}
+
+.project-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.main-container .project {
+  /* width: 100%; */
+  height: 17rem;
+  background-color: var(--light-black);
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 4px 4px rgba(27, 30, 34, 0.5);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-yellow);
+  grid-column: span 3;
+  padding-left: 1rem;
+  height: 2.5rem;
+'
+}
+
+.title h1 {
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.info {
+  display: flex;
+  grid-column: 2 /4;
+}
+
+.info p {
+  font-family: "open sans", sans-serif;
+  color: var(--text-white);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  grid-column: span 3;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-yellow);
+  width: 10.5rem;
+  height: 2.5rem;
+}
+
+.btn:nth-child(2) {
+  border-left: var(--light-black) 1px solid;
+  border-right: var(--light-black) 1px solid;
+}
+
+.btn h2 {
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+}
+
+.btn:hover{
+  background-color: var(--light-yellow);
+  cursor: pointer;
 }
