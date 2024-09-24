@@ -1,0 +1,12 @@
+:root {
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --light-yellow: #fff099;
+  --dark-yellow: #ffe75c;
+  --light-black: #2b3036;
+  --dark-black: #1b1e22;
+}
+
+p {
+  font-family: "open sans", sans-serif;
+}
