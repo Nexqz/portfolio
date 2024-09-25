@@ -54,10 +54,51 @@ nav a:hover {
   color: var(--yellow);
 }
 
-.main-container {
+.content-container {
   border: 1px solid var(--yellow);
+  border-right: none;
   max-width: 1440px;
   height: 90vh;
-  margin-inline: auto;
+  margin: 0 auto;
   overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.works {
+  margin-top: 2rem;
+  color: var(--text-white);
+  grid-column: 10/13;
+}
+
+.works:last-child {
+  margin-bottom: 2rem;
+}
+
+.works h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.works span {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
 }
