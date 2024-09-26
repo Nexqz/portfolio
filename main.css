@@ -9,7 +9,7 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--dark-black);
+  background-color: var(--eerie);
 }
 
 /* ********
@@ -26,7 +26,7 @@ body {
 
 .logo {
   width: 3.5rem;
-  fill: var(--text-white);
+  fill: var(--white);
   margin: 0.3rem 0.5rem;
   cursor: pointer;
 }
@@ -42,8 +42,8 @@ body {
 }
 
 nav a {
-  color: var(--text-white);
-  font-family: "Space Grotesk", sans-serif;
+  color: var(--white);
+  font-family: var(--main-font);
   font-weight: 300;
   font-size: 1.1rem;
   text-decoration: none;
@@ -67,12 +67,10 @@ nav a:hover {
   width: 1px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
@@ -83,22 +81,39 @@ nav a:hover {
 }
 
 .works {
-  margin-top: 2rem;
-  color: var(--text-white);
-  grid-column: 10/13;
+  margin: 3rem 0 0 3rem;
+  color: var(--white);
+  grid-column: 1/5;
+}
+
+@media (max-width: 992px) {
+  .work-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .works:last-child {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .works h1 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 1.5rem;
 }
 
+.works a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.works h1:hover {
+  color: var(--yellow);
+}
+
 .works span {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--body-font);
+  font-weight: 200;
   font-size: 0.8rem;
 }
