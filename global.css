@@ -84,9 +84,9 @@ nav a:hover {
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .content-container {
-    max-height: 70vh;
+    max-height: 80vh;
   }
 }
 
