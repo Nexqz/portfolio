@@ -73,7 +73,13 @@ nav a:hover {
   overflow-y: auto;
 }
 
-@media (max-height: 768px) {
+/* @media (max-height: 768px) {
+  .content-container {
+    max-height: 82vh;
+  }
+} */
+
+@media (max-width: 768px) {
   .content-container {
     max-height: 82vh;
   }
