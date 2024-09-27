@@ -1,0 +1,81 @@
+/* Global SECTION */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --eerie: #1b1e22;
+  --main-color: #f8f28c;
+
+  --main-font: "Space Grotesk", sans-serif;
+  --body-font: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--eerie);
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.logo {
+  width: 3.5rem;
+  fill: var(--white);
+  margin: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  #q2 {
+    fill: var(--main-color);
+  }
+}
+
+.nav-container {
+  display: flex;
+}
+
+nav a {
+  color: var(--white);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 1.2rem;
+}
+
+nav a:hover {
+  color: var(--main-color);
+}
+
+.content-container {
+  border: 1px solid var(--main-color);
+  max-width: 1440px;
+  height: 90vh;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}

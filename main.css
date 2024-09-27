@@ -1,79 +1,4 @@
-@import url(css/styles.css);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-body {
-  min-height: 100vh;
-  background-color: var(--eerie);
-}
-
-/* ********
-  HEADER    
-******** */
-
-.header-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  max-width: 1440px;
-  margin-inline: auto;
-}
-
-.logo {
-  width: 3.5rem;
-  fill: var(--white);
-  margin: 0.3rem 0.5rem;
-  cursor: pointer;
-}
-
-.logo:hover {
-  #q2 {
-    fill: var(--yellow);
-  }
-}
-
-.nav-container {
-  display: flex;
-}
-
-nav a {
-  color: var(--white);
-  font-family: var(--main-font);
-  font-weight: 300;
-  font-size: 1.1rem;
-  text-decoration: none;
-  padding: 1.2rem;
-}
-
-nav a:hover {
-  color: var(--yellow);
-}
-
-.content-container {
-  border: 1px solid var(--yellow);
-  border-right: none;
-  max-width: 1440px;
-  height: 90vh;
-  margin: 0 auto;
-  overflow-y: auto;
-}
-
-::-webkit-scrollbar {
-  width: 1px;
-}
-
-::-webkit-scrollbar-track {
-  background: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-}
+/* MAIN SECTION */
 
 .work-section {
   display: grid;
@@ -109,7 +34,7 @@ nav a:hover {
 }
 
 .works h1:hover {
-  color: var(--yellow);
+  color: var(--main-color);
 }
 
 .works span {
