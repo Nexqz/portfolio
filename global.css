@@ -6,6 +6,10 @@
   --eerie: #1b1e22;
   --main-color: #f8f28c;
 
+  --yellow: #f8f28c;
+  --red: #f2406a;
+  --blue: #33f1ff;
+
   --main-font: "Space Grotesk", sans-serif;
   --body-font: "Inter", sans-serif;
 }
@@ -20,6 +24,7 @@
 body {
   min-height: 100vh;
   background-color: var(--eerie);
+  overflow-y: hidden;
 }
 
 .header-container {
@@ -63,9 +68,15 @@ nav a:hover {
 .content-container {
   border: 1px solid var(--main-color);
   max-width: 1440px;
-  height: 90vh;
+  max-height: 88vh;
   margin: 0 auto;
   overflow-y: auto;
+}
+
+@media (max-height: 768px) {
+  .content-container {
+    max-height: 82vh;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -78,4 +89,44 @@ nav a:hover {
 
 ::-webkit-scrollbar-thumb {
   background: var(--main-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1440px;
+  padding-top: 1rem;
+  margin-inline: auto;
+}
+
+footer nav a {
+  font-family: var(--main-font);
+  font-weight: 200;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+.btn-colors {
+  display: flex;
+}
+
+.btn-yellow {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--yellow);
+}
+
+.btn-red {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--red);
+  margin: 0 1rem;
+}
+
+.btn-blue {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--blue);
+  margin-right: 1rem;
 }
