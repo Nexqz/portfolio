@@ -81,7 +81,7 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .content-container {
-    max-height: 80vh;
+    max-height: 70vh;
   }
 }
 
