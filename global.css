@@ -38,6 +38,7 @@ body {
   max-width: 1440px;
   margin-inline: auto;
   border-bottom: 1px solid var(--main-color);
+  background-color: var(--eerie);
 }
 
 .logo {
