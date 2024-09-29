@@ -3,10 +3,14 @@
 .work-section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  row-gap: 3rem;
+
+  /* margin-bottom: 3rem;
+  padding-bottom: 3rem; */
 }
 
 .works {
-  margin: 3rem 0 0 3rem;
+  margin-left: 3rem;
   color: var(--white);
   grid-column: 1/5;
 }
@@ -18,8 +22,18 @@
   }
 }
 
+.works:first-child {
+  margin-top: 3rem;
+}
+
 .works:last-child {
   margin-bottom: 3rem;
+}
+
+@media (max-height: 992px) {
+  .works:last-child {
+    margin-bottom: 6rem;
+  }
 }
 
 .works h1 {

@@ -79,7 +79,7 @@ nav a:hover {
   border-left: 1px solid var(--main-color);
   border-right: 1px solid var(--main-color);
   max-width: 1440px;
-  max-height: 88vh;
+  height: 88vh;
   margin: 0 auto;
   overflow-y: auto;
 }
