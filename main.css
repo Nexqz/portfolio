@@ -32,6 +32,12 @@
 
 @media (max-height: 992px) {
   .works:last-child {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-height: 768px) {
+  .works:last-child {
     margin-bottom: 9rem;
   }
 }
