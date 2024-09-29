@@ -2,18 +2,26 @@
 
 const btnYellow = document
   .querySelector(".btn-yellow")
-  .addEventListener("click", function () {
-    document.documentElement.style.setProperty("--main-color", "#f8f28c");
-  });
+  .addEventListener("click", () => setRootColor("#f8f28c"));
 
 const btnRed = document
   .querySelector(".btn-red")
-  .addEventListener("click", function () {
-    document.documentElement.style.setProperty("--main-color", "#f2406a");
-  });
+  .addEventListener("click", () => setRootColor("#f2406a"));
 
 const btnBlue = document
   .querySelector(".btn-blue")
-  .addEventListener("click", function () {
-    document.documentElement.style.setProperty("--main-color", "#33f1ff");
-  });
+  .addEventListener("click", () => setRootColor("#33f1ff"));
+
+function setRootColor(color) {
+  document.documentElement.style.setProperty("--main-color", color);
+  localStorage.setItem("rootColor", color);
+}
+
+function loadColor() {
+  const savedColor = localStorage.getItem("rootColor");
+  if (savedColor) {
+    setRootColor(savedColor);
+  }
+}
+
+window.onload = loadColor;
