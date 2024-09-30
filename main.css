@@ -4,9 +4,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   row-gap: 3rem;
-
-  /* margin-bottom: 3rem;
-  padding-bottom: 3rem; */
 }
 
 .works {
@@ -61,4 +58,103 @@
   font-family: var(--body-font);
   font-weight: 200;
   font-size: 0.8rem;
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 88vh;
+}
+
+.contact {
+  grid-column: 10/13;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 5rem;
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-right: 2rem;
+  }
+
+  .contact {
+    grid-column: 4/7;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0 10rem 0;
+}
+
+.input {
+  background-color: var(--eerie);
+  font-family: var(--main-font);
+  font-weight: 100;
+  padding: 0.3rem;
+  color: var(--white);
+  outline: none;
+  border: none;
+  border: 1px solid var(--main-color);
+}
+
+.contact-input h3 {
+  font-family: var(--main-font);
+  font-weight: 100;
+  color: var(--white);
+  padding-bottom: 0.3rem;
+}
+
+.contact-message {
+  height: 6rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.btn-send {
+  color: var(--white);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#q3 {
+  fill: var(--white);
+}
+
+@media (max-width: 992px) {
+  #q3 {
+    fill: var(--main-color);
+  }
+}
+
+#q3:hover {
+  fill: var(--main-color);
+}
+
+.btn-container:hover {
+  #q3 {
+    fill: var(--main-color);
+  }
+}
+
+.btn-svg {
+  margin-right: 1rem;
 }
