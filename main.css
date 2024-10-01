@@ -68,7 +68,7 @@
 }
 
 .contact {
-  grid-column: 10/13;
+  grid-column: 9/13;
   margin-top: 2rem;
 }
 
@@ -84,11 +84,10 @@
   .contact-section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    padding-right: 2rem;
   }
 
   .contact {
-    grid-column: 4/7;
+    grid-column: span 6;
   }
 }
 
@@ -112,6 +111,7 @@
   border-right: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 18rem;
 }
 
 .contact-input h3 {
@@ -122,7 +122,7 @@
 }
 
 .contact-message {
-  height: 6rem;
+  height: 10rem;
 }
 
 .btn-container {
@@ -130,16 +130,19 @@
   justify-content: flex-end;
   align-items: center;
   margin-left: 7.3rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .btn-send {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--white);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 #q3 {
