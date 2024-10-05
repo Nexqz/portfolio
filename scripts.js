@@ -25,3 +25,23 @@ function loadColor() {
 }
 
 window.onload = loadColor;
+
+const btnWork = document.querySelector(".btn-work");
+const btnAbout = document.querySelector(".btn-about");
+const btnContact = document.querySelector(".btn-contact");
+const workSection = document.querySelector(".work-section");
+const aboutSection = document.querySelector(".about-section");
+const contactSection = document.querySelector(".contact-section");
+
+function showSection(sectionToShow) {
+  workSection.style.display = "none";
+  aboutSection.style.display = "none";
+  contactSection.style.display = "none";
+  sectionToShow.style.display = "grid";
+}
+
+btnWork.addEventListener("click", () => showSection(workSection));
+btnAbout.addEventListener("click", () => showSection(aboutSection));
+btnContact.addEventListener("click", () => showSection(contactSection));
+
+showSection(workSection);
