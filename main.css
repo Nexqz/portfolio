@@ -73,7 +73,7 @@
   align-items: center;
   flex-direction: column;
   grid-column: 9/13;
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
 
 .contact h2 {
