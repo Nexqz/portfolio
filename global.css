@@ -24,7 +24,7 @@
 body {
   min-height: 100vh;
   background-color: var(--eerie);
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .header-container {
@@ -76,12 +76,12 @@ nav a:hover {
 }
 
 .content-container {
-  border-left: 1px solid var(--main-color);
-  border-right: 1px solid var(--main-color);
+  /* border-left: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color); */
   max-width: 1440px;
   max-height: 88dvh;
   margin: 0 auto;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 /* @media (max-height: 1200px) {
@@ -102,7 +102,7 @@ nav a:hover {
   }
 } */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 1px;
 }
 
@@ -112,7 +112,7 @@ nav a:hover {
 
 ::-webkit-scrollbar-thumb {
   background: var(--main-color);
-}
+} */
 
 .footer-container {
   position: fixed;
