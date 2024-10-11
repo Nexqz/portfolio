@@ -27,17 +27,17 @@
   margin-bottom: 3rem;
 }
 
-@media (max-height: 992px) {
+/* @media (max-height: 992px) {
   .works:last-child {
-    margin-bottom: 6rem;
+    margin-bottom: 60rem;
   }
-}
+} */
 
-@media (max-height: 768px) {
+/* @media (max-height: 768px) {
   .works:last-child {
     margin-bottom: 9rem;
   }
-}
+} */
 
 .works h1 {
   font-family: var(--main-font);
@@ -58,6 +58,13 @@
   font-family: var(--body-font);
   font-weight: 200;
   font-size: 0.8rem;
+}
+
+.about-section {
+  padding-top: 3rem;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--body-font);
 }
 
 .contact-section {
