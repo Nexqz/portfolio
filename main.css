@@ -41,8 +41,8 @@
 
 .works h1 {
   font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
 }
 
 .works a {
@@ -56,8 +56,8 @@
 
 .works span {
   font-family: var(--body-font);
-  font-weight: 200;
-  font-size: 0.8rem;
+  font-weight: 300;
+  font-size: 0.75rem;
 }
 
 .about-section {
