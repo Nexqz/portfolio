@@ -120,7 +120,7 @@ nav a:hover {
   left: 0;
   right: 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   max-width: 1440px;
   padding: 1.5rem 0;
@@ -129,11 +129,35 @@ nav a:hover {
   border-top: 1px solid var(--main-color);
 }
 
-footer nav a {
-  font-family: var(--main-font);
-  font-weight: 200;
-  font-size: 0.9rem;
-  padding: 0 1rem;
+.btn-social {
+  display: flex;
+}
+
+svg {
+  display: block;
+}
+
+.icons {
+  margin-left: 1rem;
+}
+
+.btn-social svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* .btn-social a {
+  padding: 0 0 0 1rem;
+} */
+
+.btn-social a:hover {
+  .github {
+    fill: var(--main-color);
+  }
+
+  .linkedin {
+    fill: var(--main-color);
+  }
 }
 
 .btn-colors {
