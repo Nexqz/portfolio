@@ -160,6 +160,13 @@ svg {
   }
 }
 
+.copyright {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
 .btn-colors {
   display: flex;
 }
