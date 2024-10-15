@@ -57,3 +57,7 @@ img {
     gap: 1rem;
   }
 }
+
+.fancybox__caption {
+  font-family: var(--body-font);
+}
