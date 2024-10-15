@@ -1,5 +1,6 @@
 "use strict";
 
+//Change Color Mode
 const btnYellow = document
   .querySelector(".btn-yellow")
   .addEventListener("click", () => setRootColor("#f8f28c"));
@@ -26,6 +27,7 @@ function loadColor() {
 
 window.onload = loadColor;
 
+//Navigation
 const btnWork = document.querySelector(".btn-work");
 const btnAbout = document.querySelector(".btn-about");
 const btnContact = document.querySelector(".btn-contact");
