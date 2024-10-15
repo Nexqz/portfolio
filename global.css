@@ -193,3 +193,48 @@ svg {
   margin-right: 1rem;
   cursor: pointer;
 }
+
+/* projects header */
+
+.projects-container {
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.projects-container h1 {
+  font-family: var(--main-font);
+  margin: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.heading-section {
+  border: 1px solid var(--white);
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+.heading-section p {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.objective {
+  font-family: var(--body-font);
+
+  margin-bottom: 2rem;
+}
+
+.objective h2 {
+  margin-bottom: 0.9rem;
+  font-weight: 700;
+}
+
+.tools {
+  font-family: var(--body-font);
+}
+
+.tools h2 {
+  margin-bottom: 0.9rem;
+  font-weight: 700;
+}
