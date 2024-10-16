@@ -7,6 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="../css/slisnetu.css" />
     <link rel="stylesheet" href="../global.css" />
     <title>Slisnetu</title>
   </head>
@@ -32,8 +37,100 @@
         </nav>
       </section>
     </header>
-    <section class="main-container">
-      <section class="content-container"></section>
+    <section class="projects-container">
+      <section class="content-container">
+        <h1>Slisnetu</h1>
+        <div class="heading-section">
+          <div class="objective">
+            <h2>Objective:</h2>
+            <p>
+              Slisnetu is a versatile utensil box and survival kit designed to
+              enhance your chances of thriving in the wild or during an
+              apocalypse. Crafted from durable stainless steel, this compact
+              container includes two forks, two spoons, and two pairs of
+              chopsticks, all ready for use in both culinary delights and
+              survival situations. Every element of the kit is thoughtfully
+              designed for maximum functionality, ensuring that each piece
+              serves a distinct purpose. The sliding box cleverly transforms
+              into two cups, while the divider doubles as a sharp blade for
+              cutting and self-defense. Tailored for adventurers of all ages,
+              Slisnetu is your essential companion for surviving the great
+              outdoors. Slisnetu; eat, drink and survive together.
+            </p>
+          </div>
+
+          <div class="tools">
+            <h2>Tools:</h2>
+            <p>Adobe Suite, Figma</p>
+          </div>
+        </div>
+
+        <div class="image-section">
+          <a
+            href="../assets/slisnetu/style.jpg"
+            data-fancybox="gallery"
+            data-caption="Style Guide"
+          >
+            <img src="../assets/slisnetu/style.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/packaging.jpg"
+            data-fancybox="gallery"
+            data-caption="Packaging"
+          >
+            <img src="../assets/slisnetu/packaging.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/patterns-1.jpg"
+            data-fancybox="gallery"
+            data-caption="Patterns"
+          >
+            <img src="../assets/slisnetu/patterns-1.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/patterns-2.jpg"
+            data-fancybox="gallery"
+            data-caption="Patterns (Continue)"
+          >
+            <img src="../assets/slisnetu/patterns-2.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/mock-1.jpg"
+            data-fancybox="gallery"
+            data-caption="Mock Up"
+          >
+            <img src="../assets/slisnetu/mock-1.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/mock-2.jpg"
+            data-fancybox="gallery"
+            data-caption="Mock Up (Continue)"
+          >
+            <img src="../assets/slisnetu/mock-2.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/mock-3.jpg"
+            data-fancybox="gallery"
+            data-caption="Mock Up (Continue)"
+          >
+            <img src="../assets/slisnetu/mock-3.jpg" />
+          </a>
+
+          <a
+            href="../assets/slisnetu/mock-4.jpg"
+            data-fancybox="gallery"
+            data-caption="Mock Up (Continue)"
+          >
+            <img src="../assets/slisnetu/mock-4.jpg" />
+          </a>
+        </div>
+      </section>
     </section>
 
     <footer>
@@ -74,6 +171,10 @@
         </div>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="../scripts.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {});
+    </script>
   </body>
 </html>
