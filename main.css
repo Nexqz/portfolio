@@ -20,11 +20,11 @@
 }
 
 .works:first-child {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .works:last-child {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 /* @media (max-height: 992px) {
