@@ -1,12 +1,5 @@
-.project-title {
-  text-align: center;
-  margin: 1.5rem 0;
-  color: var(--main-color);
-  font-family: var(--main-font);
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 .video-container {
   width: 100%;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
