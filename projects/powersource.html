@@ -7,8 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="../global.css" />
-    <title>Power Source</title>
+    <link rel="stylesheet" href="../css/powersource.css" />
+    <title>Schuylkill Center</title>
   </head>
   <body>
     <header>
@@ -32,8 +37,98 @@
         </nav>
       </section>
     </header>
-    <section class="main-container">
-      <section class="content-container"></section>
+    <section class="projects-container">
+      <section class="content-container">
+        <h1>Power Source</h1>
+        <div class="heading-section">
+          <div class="objective">
+            <h2>Objective:</h2>
+            <p>
+              Power Source is an engaging educational website dedicated to
+              exploring the various energy sources that fuel our daily lives.
+              From renewable options like solar, wind, and bioenergy to
+              non-renewable sources such as fossil fuels, our mission is to
+              provide insightful information about the benefits and drawbacks of
+              each energy type. The website delves into the mechanics behind
+              these sources, aiming to spark curiosity and foster a deeper
+              understanding of our energy choices. Perhaps through your
+              exploration, you might even discover an innovative new power
+              source that could shape the future!
+            </p>
+          </div>
+
+          <div class="tools">
+            <h2>Tools:</h2>
+            <p>Adobe Suite, Figma</p>
+          </div>
+        </div>
+
+        <div class="image-section">
+          <a
+            href="../assets/powersource/style.jpg"
+            data-fancybox="gallery"
+            data-caption="Style Guide"
+          >
+            <img src="../assets/powersource/style.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/source.jpg"
+            data-fancybox="gallery"
+            data-caption="Power Source"
+          >
+            <img src="../assets/powersource/source.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/nav.jpg"
+            data-fancybox="gallery"
+            data-caption="Navigation"
+          >
+            <img src="../assets/powersource/nav.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/home.jpg"
+            data-fancybox="gallery"
+            data-caption="Home Page"
+          >
+            <img src="../assets/powersource/home.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/solar.jpg"
+            data-fancybox="gallery"
+            data-caption="Solar Energy Page"
+          >
+            <img src="../assets/powersource/solar.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/wind.jpg"
+            data-fancybox="gallery"
+            data-caption="Wind Energy Page"
+          >
+            <img src="../assets/powersource/wind.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/biomass.jpg"
+            data-fancybox="gallery"
+            data-caption="Biomass Energy Page"
+          >
+            <img src="../assets/powersource/biomass.jpg" />
+          </a>
+
+          <a
+            href="../assets/powersource/fossil.jpg"
+            data-fancybox="gallery"
+            data-caption="Fossil Fuels Page"
+          >
+            <img src="../assets/powersource/fossil.jpg" />
+          </a>
+        </div>
+      </section>
     </section>
 
     <footer>
@@ -74,6 +169,10 @@
         </div>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="../scripts.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {});
+    </script>
   </body>
 </html>

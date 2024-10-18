@@ -1,0 +1,21 @@
+img {
+  width: 100%;
+}
+
+.image-section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem 2rem;
+}
+
+@media (max-width: 992px) {
+  .image-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.fancybox__caption {
+  font-family: var(--body-font);
+}
