@@ -61,10 +61,37 @@
 }
 
 .about-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   padding-top: 3rem;
-  text-align: center;
   color: var(--white);
   font-family: var(--body-font);
+  height: 88vh;
+  margin: 0 3rem;
+}
+
+.about-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.about-me {
+  grid-column: 4/10;
+}
+
+.about-me p {
+  line-height: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .about-me {
+    grid-column: span 6;
+  }
 }
 
 .contact-section {
