@@ -92,6 +92,10 @@
   .about-me {
     grid-column: span 6;
   }
+
+  .about-img {
+    width: 100%;
+  }
 }
 
 .contact-section {
